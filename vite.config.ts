@@ -9,15 +9,15 @@ export default defineConfig({
     lib: {
       entry: resolve(__dirname, 'lib/main.ts'),
       name: '@neonkit',
-      filename: '@neonkit-example',
-    }
-  },
-  rollupOptions: {
-    external: ['vue'],
-    output: {
-      globals: {
-        vue: 'Vue'
+      fileName: '@neonkit-example',
+    },
+    rollupOptions: {
+      external: ['vue'],
+      output: {
+        globals: {
+          vue: 'Vue'
+        }
       }
     }
-  }
+  },
 })
